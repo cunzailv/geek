@@ -1,0 +1,54 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug 后端服务 (Egg.js)",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/geekape-nav-server",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "debug"],
+      "env": {
+        "NODE_ENV": "development"
+      },
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen"
+    },
+    {
+      "name": "Debug 前端主站 (Nuxt.js)",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/geekape-nav-main",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev"],
+      "env": {
+        "NODE_ENV": "development"
+      },
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen"
+    },
+    {
+      "name": "Debug 后台管理 (React)",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/geekape-nav-admin",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["start"],
+      "env": {
+        "REACT_APP_ENV": "dev"
+      },
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen"
+    }
+  ],
+  "compounds": [
+    {
+      "name": "启动所有服务",
+      "configurations": [
+        "Debug 后端服务 (Egg.js)",
+        "Debug 前端主站 (Nuxt.js)",
+        "Debug 后台管理 (React)"
+      ]
+    }
+  ]
+}

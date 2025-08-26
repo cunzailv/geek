@@ -1,0 +1,40 @@
+{
+  "folders": [
+    {"name": "🌐 前端主站", "path": "./geekape-nav-main"},
+    {"name": "⚡ 后台管理", "path": "./geekape-nav-admin"}, 
+    {"name": "🔧 后端服务", "path": "./geekape-nav-server"}
+  ],
+  "settings": {
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+    "typescript.preferences.quoteStyle": "single",
+    "javascript.preferences.quoteStyle": "single",
+    "files.exclude": {
+      "**/node_modules": true,
+      "**/dist": true,
+      "**/.nuxt": true,
+      "**/coverage": true
+    },
+    "search.exclude": {
+      "**/node_modules": true,
+      "**/dist": true,
+      "**/.nuxt": true,
+      "**/coverage": true
+    }
+  },
+  "extensions": {
+    "recommendations": [
+      "ms-vscode.vscode-typescript-next",
+      "octref.vetur",
+      "ms-vscode.vscode-json",
+      "esbenp.prettier-vscode",
+      "dbaeumer.vscode-eslint",
+      "bradlc.vscode-tailwindcss",
+      "formulahendry.auto-rename-tag",
+      "christian-kohler.path-intellisense",
+      "ms-vscode.vscode-todo-highlight"
+    ]
+  }
+}
